@@ -6,30 +6,27 @@ body {
     font-size: 16px;
 }
 
-/* GRID */
+/* GENERAL */
 
-.full-width {
-    margin: 0 auto;
-    overflow: auto;
+.content-wrapper {
     max-width: 1200px;
-}
-
-.half-width {
-    float: left;
-    width: 50%;
-}
-
-.third-width {
-    float: left;
-    width: 33%;
+    margin: 0 auto;
 }
 
 /* HEADER SECTION */
+
+header .content-wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
 
 header {
     background: url("../img/full-background.png");
     background-size: cover;
     background-position: center;
+    padding-bottom: 18%;
 }
 
 header h1 {
@@ -40,12 +37,15 @@ header h1 {
 }
 
 nav {
-    float: right;
     padding: 75px 25px;
 }
 
+nav ul {
+    display: flex;
+}
+
 nav ul li {
-    display: inline-block;
+    list-style-type: none;
 }
 
 nav ul li a {
@@ -57,13 +57,11 @@ nav ul li a {
 }
 
 header h2 {
-    clear: both;
     color: #9b9b9b;
     font-family: 'Lora', serif;
-    font-size: 72px;
+    font-size: 4.5em;
     line-height: 80px;
     padding: 20px 0 20px 25px;
-    width: 84%;
 }
 
 header h2 span {
@@ -72,14 +70,22 @@ header h2 span {
 
 /* ABOUT SECTION */
 
-#about .full-width {
+#about .content-wrapper {
     padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+#about .content-wrapper .half-width {
+    flex-basis: 45%;
 }
 
 #about h2 {
     font-family: 'Lora', serif;
     font-size: 2.25em;
     padding-left: 50px;
+    width: 100%;
 }
 
 #about p {
@@ -97,8 +103,14 @@ header h2 span {
     text-align: center;
 }
 
-#work .full-width {
+#work .content-wrapper {
     padding: 115px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#work .third-width {
+    width: 33%;
 }
 
 #work img {
@@ -109,7 +121,7 @@ header h2 span {
     font-size: 1.5em;
     line-height: 32px;
     margin: 0 auto;
-    width: 16%;
+    width: 48%;
 }
 
 #work p {
@@ -125,7 +137,7 @@ header h2 span {
     background: #ebebeb;
 }
 
-#contact .full-width {
+#contact .content-wrapper {
     padding: 110px 0;
 }
 
