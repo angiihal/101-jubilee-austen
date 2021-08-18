@@ -1,38 +1,41 @@
 /* BASE STYLES */
+
 body {
     color: #2b2b2b;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
 }
 
 /* GRID */
+
 .full-width {
     margin: 0 auto;
     overflow: auto;
-    width: 1200px;
+    max-width: 1200px;
 }
 
 .half-width {
     float: left;
-    width: 600px;
+    width: 50%;
 }
 
 .third-width {
     float: left;
-    width: 400px;
+    width: 33%;
 }
 
 /* HEADER SECTION */
+
 header {
     background: url("../img/full-background.png");
     background-size: cover;
     background-position: center;
-    height: 800px;
 }
 
 header h1 {
     color: #bbc085;
     font-family: 'Lora', serif;
-    font-size: 30px;
+    font-size: 1.875em;
     padding: 65px 0 65px 25px;
 }
 
@@ -47,7 +50,7 @@ nav ul li {
 
 nav ul li a {
     color: #828282;
-    font-size: 18px;
+    font-size: 1.125em;
     padding-left: 80px;
     text-decoration: none;
     text-transform: uppercase;
@@ -60,7 +63,7 @@ header h2 {
     font-size: 72px;
     line-height: 80px;
     padding: 20px 0 20px 25px;
-    width: 1000px;
+    width: 84%;
 }
 
 header h2 span {
@@ -68,25 +71,27 @@ header h2 span {
 }
 
 /* ABOUT SECTION */
+
 #about .full-width {
     padding: 80px 0;
 }
 
 #about h2 {
     font-family: 'Lora', serif;
-    font-size: 36px;
+    font-size: 2.25em;
     padding-left: 50px;
 }
 
 #about p {
     color: #7f7f7f;
-    font-size: 21px;
+    font-size: 1.3125em;
     line-height: 40px;
     padding-left: 50px;
     padding-right: 50px;
 }
 
 /* WORK SECTION */
+
 #work {
     background: #f9ceb7;
     text-align: center;
@@ -101,20 +106,21 @@ header h2 span {
 }
 
 #work h3 {
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 32px;
     margin: 0 auto;
-    width: 190px;
+    width: 16%;
 }
 
 #work p {
     font-family: 'Lora', serif;
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 30px;
     padding: 0 50px;
 }
 
-/* CONTACT SECTION */  
+/* CONTACT SECTION */
+
 #contact {
     background: #ebebeb;
 }
@@ -138,19 +144,19 @@ header h2 span {
 
 #contact h2 {
     font-family: 'Lora', serif;
-    font-size: 36px;
+    font-size: 2.25em;
     line-height: 44px;
 }
 
 #contact #email-header {
-    font-size: 32px;
+    font-size: 2em;
     font-weight: normal;
     line-height: 44px;
     margin: -30px 0 5px 0;
 }
 
 #contact #socialmedia-header {
-    font-size: 29px;
+    font-size: 1.8125em;
     font-weight: bold;
     line-height: 44px;
     margin: 40px 0 0 0;
@@ -158,7 +164,7 @@ header h2 span {
 
 #contact a {
     color: #c49075;
-    font-size: 28px;
+    font-size: 1.75em;
     font-weight: 44px;
     text-decoration: none;
 }
