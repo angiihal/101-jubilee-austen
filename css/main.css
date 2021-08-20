@@ -139,6 +139,9 @@ header h2 span {
 
 #contact .content-wrapper {
     padding: 110px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
 }
 
 #contact img#contact-img {
