@@ -1,5 +1,11 @@
 /* BASE STYLES */
 
+html,body {
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
 body {
     color: #2b2b2b;
     font-family: 'Source Sans Pro', sans-serif;
@@ -186,12 +192,17 @@ header h2 span {
 
 #contact ul {
     list-style: none;
-}
-
-#contact ul li {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #contact ul img {
     padding-right: 48px;
+}
+
+@media screen and (min-width: 768px) {
+    .content-wrapper {
+        min-width: 768px;
+    }
 }
