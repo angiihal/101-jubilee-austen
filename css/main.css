@@ -201,8 +201,26 @@ header h2 span {
     padding-right: 48px;
 }
 
-@media screen and (min-width: 768px) {
+/* ----- TABLET STYLES ----- */
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
     .content-wrapper {
-        min-width: 768px;
+        max-width: 600px;
     }
+
+    header .content-wrapper {
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+
+    header h1,
+    header nav ul {
+        padding: 0;
+    }
+
+    header nav ul li a {
+        padding: 0 5px;
+    }
+
 }
