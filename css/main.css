@@ -147,7 +147,8 @@ header h2 span {
     padding: 110px 0;
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 #contact img#contact-img {
@@ -223,4 +224,138 @@ header h2 span {
         padding: 0 5px;
     }
 
+    #about .content-wrapper .half-width {
+        flex-basis: 50%;
+    }
+
+    #work .content-wrapper {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+
+    #work .third-width {
+        width: 100%;
+    }
+
+    #contact .content-wrapper {
+        justify-content: center;
+    }
+
+    #contact #envelope,
+    #contact h2, 
+    #contact #email-header, 
+    #contact #socialmedia-header, 
+    #contact ul {
+        padding: 0;
+        margin-left: 25px;
+    }
+}
+
+/* ----- MOBILE STYLES ----- */
+
+@media screen and (max-width: 768px) {
+    .content-wrapper {
+        max-width: 650px;
+    }
+
+    header .content-wrapper {
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+    }
+
+    header h1 {
+        padding: 30px 0;
+    }
+
+    header h2 {
+        font-size: 2.5em;
+        
+    }
+
+    header nav {
+        padding: 0;
+    }
+
+    header nav ul {
+        padding-left: 0;
+    }
+
+    header nav ul li a {
+        padding: 0 5px;
+    }
+
+    #about .content-wrapper {
+        justify-content: center;
+        flex-flow: column nowrap;
+        padding: 40px 0;
+    }
+
+    #about h2 {
+        font-size: 1.5em;
+    }
+
+    #about p {
+        font-size: 1em;
+        margin-right: 25px;
+        text-align: justify;
+    }
+
+    #work .content-wrapper {
+        justify-content: center;
+        flex-flow: column wrap;
+
+    }
+
+    #work .third-width {
+        width: 100%;
+    }
+
+    #contact .content-wrapper {
+        justify-content: center;
+    }
+
+    #contact .content-wrapper .contact {
+        width: 70%;
+    }
+
+    #contact,
+    #contact h2, 
+    #contact #email-header, 
+    #contact #socialmedia-header, 
+    #contact ul {
+        padding: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #contact #envelope {
+        padding: 0;
+        display: none;
+    }
+
+    #contact a {
+        font-size: 1.2em;
+    }
+
+    #contact .content-wrapper #contact-img {
+        margin-left: 0;
+    }
+
+    #contact figure {
+        width: 70%;
+    }
+
+    #contact figure img {
+        width: 100%;
+    }
+
+    #contact ul {
+        justify-content: center;
+    }
+
+    #contact ul img {
+        padding: 15px;
+    }
 }
