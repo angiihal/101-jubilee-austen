@@ -153,7 +153,6 @@ header h2 span {
 
 #contact img#contact-img {
     border: 12px solid #ffffff;
-    margin-left: 25px;
 }
 
 #contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
@@ -210,7 +209,6 @@ header h2 span {
     }
 
     header .content-wrapper {
-        justify-content: center;
         align-items: center;
         flex-flow: column wrap;
     }
@@ -229,13 +227,12 @@ header h2 span {
     }
 
     #work .content-wrapper {
-        display: flex;
-        justify-content: center;
         flex-flow: column wrap;
     }
 
     #work .third-width {
         width: 100%;
+        padding-bottom: 20px;
     }
 
     #contact .content-wrapper {
@@ -248,7 +245,6 @@ header h2 span {
     #contact #socialmedia-header, 
     #contact ul {
         padding: 0;
-        margin-left: 25px;
     }
 }
 
